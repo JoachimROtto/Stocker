@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="/ProPra-SS21-Basis/libs/AssertJ/assertj-core-3.9.1.jar"/>
+	<classpathentry kind="lib" path="/ProPra-SS21-Basis/libs/gson/gson-2.8.6.jar" sourcepath="/ProPra-SS21-Basis/libs/gson/gson-2.8.6-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/ProPra-SS21-Basis/libs/gson/gson-2.8.6-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/ProPra-SS21-Basis/libs/Java-WebSocket/Java-WebSocket-1.5.1-with-dependencies.jar" sourcepath="/ProPra-SS21-Basis/libs/Java-WebSocket/Java-WebSocket-1.5.1-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/ProPra-SS21-Basis/libs/Java-WebSocket/Java-WebSocket-1.5.1-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/ProPra-SS21-Basis/libs/SLF4J/slf4j-simple-1.7.30.jar" sourcepath="/ProPra-SS21-Basis/libs/SLF4J/slf4j-simple-1.7.30-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/ProPra-SS21-Basis/libs/SLF4J/slf4j-simple-1.7.30-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry combineaccessrules="false" kind="src" path="/ProPra-SS21-Basis"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
