@@ -1,7 +1,7 @@
 # Stocker
 
-Stocker ist eine Anwendung zur Verwaltung und Darstellung von Aktienkursen. Anlass:  Programmierpraktikum 2021
-Screenshot
+Stocker ist eine Anwendung zur Verwaltung und Darstellung von Aktienkursen. Anlass: Programmierpraktikum 2021
+
 ## Features
 
 Basierend auf der Auswahl von Aktien aus dem Angebot eines Datenlieferanten (finnhub.io) wird bereitgestellt
