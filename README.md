@@ -18,4 +18,4 @@ Seit Java 17 ist es Gson nicht mehr möglich auf bestimmte Felder per Reflection
 ## Installation
 - finnhub-Account anlegen und eine API-Key erstellen. Diesen in den Einstellungen (Kontextmenu Anbieter) eintragen.
 - Sourcecode forken oder Herunterladen.
-- Benötigte Bibliotheken einbinden (Siehe: - Benötigte Bibliotheken einbinden (Siehe: [Stocker.iml](Stocker.iml))
+- Benötigte Bibliotheken einbinden (Siehe: [Stocker.iml](Stocker.iml))
