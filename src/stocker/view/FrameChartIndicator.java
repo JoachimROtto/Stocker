@@ -144,15 +144,26 @@ public class FrameChartIndicator extends JDialog{
         setIndiButton.addActionListener(new ActionListener() {  
             @Override
             public void actionPerformed (ActionEvent actionEvent) {
+                if (fieldN.getText().isEmpty() ){
+                    JOptionPane.showConfirmDialog(null, "Bitte ein n/m angeben.", "Achtung",
+                            JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE);
+                    return;
+                }
                 int fieldNAsInt=Integer.valueOf(fieldN.getText());
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        if (mode==0) {                    
+                        if (mode==0) {
                             item= new MovingAverage(fieldNAsInt, chartModel, sas.getPrefer(), itemColor);
                         }
                         else {
-                            double fieldFAsInt=Double.valueOf(fieldF.getText());               
+                            if (fieldF.getText().isEmpty())
+                            {
+                                JOptionPane.showConfirmDialog(null, "Bitte ein f angeben.", "Achtung",
+                                        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE);
+                                return;
+                            }
+                            double fieldFAsInt=Double.valueOf(fieldF.getText());
                             item= new BollingerBand(fieldFAsInt, fieldNAsInt, chartModel, sas.getPrefer(), itemColor);
                         }
                         sas.setsizeIndicatorFrameAdd(getSize());
@@ -281,7 +292,7 @@ public class FrameChartIndicator extends JDialog{
        }}
     
     void checkedInt(String input, JTextField source) {
-        if (input.isEmpty()) {return;}
+        if (input.isEmpty()) {return ;}
         try {
             Integer.valueOf(input);
         }
